@@ -1,4 +1,3 @@
-name = input("What is your name?: ")
+name = input("Who are you? ")
 
-
-print(name)
+print("Hi "+name+"!")

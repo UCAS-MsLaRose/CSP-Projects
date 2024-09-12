@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(void){
-    int num = (int) pow(4,3)*4/2;
+    int num = ((int) pow(2,5)/4)+7;
     printf("%d", num);
     return 0;
 }

@@ -2,7 +2,6 @@
 #include <math.h>
 
 int main(void){
-    int num = ((int) pow(2,5)/4)+7;
-    printf("%d", num);
+    printf("%d\n", ((int) pow(2,2)*6)+4);
     return 0;
 }

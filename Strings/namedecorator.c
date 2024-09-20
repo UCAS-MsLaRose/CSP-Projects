@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <string.h>
 
-void decorate_name(char *name) {
-    int length = strlen(name);
-    for (int i = 0; i < length + 4; i++) {
-        putchar('-');
-    }
-    printf("\n----%s----\n", name);
-    for (int i = 0; i < length + 4; i++) {
-        putchar('-');
-    }
-    printf("\n");
-}
-
-int main() {
-    char user_name[100];
-    printf("What is your name? ");
-    fgets(user_name, sizeof(user_name), stdin);
-    user_name[strcspn(user_name, "\n")] = '\0';
-    decorate_name(user_name);
+int main(void){
+    char animal[20];
+    char place [20];
+    char verb [20]; 
+    char sentence [400]= "The ";
+    printf("Name a animal: ");
+    scanf("%s", animal);
+    printf("Name a place: ");
+    scanf("%s", place);
+    printf("Name a past tense verb: ");
+    scanf("%s", verb);
+    strcat(sentence, animal);
+    strcat(sentence, " went to the ");
+    strcat(sentence, place);
+    strcat(sentence, " and ");
+    strcat(sentence, verb);
+    strcat(sentence, " with his friend the angry turtle.\n");
+    printf("%s", sentence);
     return 0;
 }

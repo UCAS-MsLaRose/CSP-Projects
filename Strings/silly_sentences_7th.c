@@ -18,8 +18,8 @@ int main(void){
     strcat(sentence, verb);
     strcat(sentence, " and bought a ");
     strcat(sentence, noun);
-    strcat(sentence, ".");
+    strcat(sentence, ".\n");
     printf("%s", sentence);
-    //printf("\n %s went to the %s where he %s and bought a %s.", name, place, verb, noun);
+    //printf("%s went to the %s where he %s and bought a %s.", name, place, verb, noun);
     return 0;
 }

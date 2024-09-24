@@ -1,23 +1,26 @@
-#include <stdio.h>
-#include <string.h>
+#include <stdio.h> 
+#include <stdio.h> 
 
 int main(void){
-    char animal[20];
-    char place[20];
-    char verb[20];
-    char sentence[400] = "The ";
-    printf("Name an animal: ");
-    scanf("%s", animal); 
-    printf("Name a place: ");
-    fgets(place, sizeof(place), stdin);
-    printf("Name a past tense verb: ");
-    fgets(verb, sizeof(verb), stdin);
-    strcat(sentence, animal);
-    strcat(sentence, " went to the ");
+    char name[20], place[20], verb[20], noun[20], sentence[500]; 
+    printf("Type a name: "); 
+    scanf("%s", name); 
+    printf("Type a place: "); 
+    scanf("%s", place); 
+    printf("Type a verb: "); 
+    scanf("%s", verb); 
+    printf("Type a noun: "); 
+    scanf("%s", noun); 
+    strcat(sentence, name); 
+    strcat(sentence, "went to the ");
     strcat(sentence, place);
-    strcat(sentence, " and ");
+    strcat(sentence, "where they "); 
     strcat(sentence, verb);
-    strcat(sentence, " with his friend the angry turtle.\n");
-    printf("%s", sentence);
+    stract(sentence, "and bought a "); 
+    stract(sentence, noun); 
+    strcat(sentence, ".\n"); 
+    printf("%s", sentence); 
+    //printf("%s went to the %s and bought a %s, name, place, verb, noun"); 
+    printf("%s went to the %s where he %s and bought a %s.", name, place, verb, noun); 
     return 0;
 }

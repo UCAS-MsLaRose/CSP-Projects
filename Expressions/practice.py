@@ -1,9 +1,12 @@
-print(int(7-24/8*4+6))
-print(int(18/3-7+2*5))
-print(int(6*4/12+72/8-9))
-print(int((17-6/2)+4*3))
-print(int(-2*(1*4-2/2)+(6+2-3)))
-print(int(-1*((3-4*7)/5)-2*24/6))
-print(int((3*5**2/15)-(5-2**2)))
-print(int((1**4*2**2+3**3)-2**5/4))
-print(int((22/2-2.5)**2+(4-6/6)**2))
+num = 2
+numTwo = 8
+
+print(7-24//(numTwo)*4+6)
+print(18//3-7+(num)*5)
+print(6*4//12+72//(numTwo)-9)
+print(17-6//(num)+4*3)
+print(-2*(1*4-(num)//(num))+6+(num)-3)
+print(-1*((3-4*7)//5)-(num)*24//6)
+print((3*5**(num)//15)-(5-(num)**(num)) )
+print((1**4*(num)**(num)+3**3)-(num)**5//4 )
+print((22//(num)-(num)*5)**(num)+(4-6//6)**(num) )

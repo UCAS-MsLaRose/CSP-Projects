@@ -1,14 +1,14 @@
-
-#include <stdio.h>
+#include<stdio.h>
 #include <string.h>
 
 int main(void){
-    char name[9] = "sawyer";
-    char prefix[9] = ":)";
-    char prefics[9] = "(:";
-    strcat(prefix, name);
-    strcat(name, prefics);
-    printf("%s", prefix); printf("%s", prefics);
-
-return 0;
+    char name [20];
+    char sentence [400];
+    printf("What's your name?\n");
+    scanf("%s", name);
+strcat(sentence, "~~~");
+    strcat(sentence, name);
+    strcat(sentence, "~~~");
+    printf("%s\n", sentence);
+    return 0;
 }

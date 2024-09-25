@@ -1,28 +1,33 @@
-#include <stdio.h>
-#include <math.h>
+int main(void) {
 
-
-int main(void){
-  
-   int numberTwo = 2;
-   int numberSix = 6;
-   float powerOne = pow(5,2); // 5 to the power of 2
-   float powerTwo = pow(2,2);
-   float powerThree = pow(1, 4);
-   float powerFour = pow(3, 3);
-   float powerFive = pow(2, 5);
-   float powerSix = pow((22 / 2 - 2 * 5), 2);
-   float powerSeven = pow((4 - 6 / 6), 2);
-
-
-   printf("%d \n", 7 - 24 / 8 * 4 + numberSix);
-   printf("%d \n", 18 / 3 - 7 + numberTwo * 5);
-   printf("%d \n", numberSix * 4 / 12 + 72 / 8 - 9);
-   printf("%d \n", (17 - 6 / numberTwo) + 4 * 3);
-   printf("%d \n", -2 * (1 * 4 - numberTwo / numberTwo) + (numberSix + numberTwo - 3));
-   printf("%d \n", -1 * ((3 - 4 * 7) / 5) -2 * 24 / numberSix);
-   printf("%f \n", (3 * powerOne / 15) - (5 - powerTwo));
-   printf("%f \n", (powerThree * (powerTwo + powerFour) - powerFive / 4));
-   printf("%f \n", powerSix + powerSeven);
-   return 0;
+    float income, rent, utilities, groceries, transportation, expenses, savings, total;
+    float prent, putilities, pgroceries, ptransportation, pexpenses, psavings, ptotal;
+    printf("This is going to calculate your budget for the month.");
+    printf("How much do you make in a month?\n");
+    scanf("%f", &income);
+    scanf("Your income is: $%d%%\n", income);
+    printf("How much is rent?\n");
+    scanf("%f",&rent);
+    printf("How much is utilities?\n");
+    scanf("%f",&utilities);
+    printf("How much is groceries?\n");
+    scanf("%f", &groceries);
+    printf("How much is transportation\n");
+    scanf("%f", &transportation);
+    expenses = rent + utilities + groceries + transportation;
+    savings = income *.2;
+    total = income - expenses - savings;
+    prent = rent/income *100;
+    putilities = utilities/income *100;
+    pgroceries = groceries/income *100;
+    ptransportation = transportation/income *100;
+    pexpenses = expenses/income *100;
+    printf("Your income is: $%d%%\n", income);
+    printf("Your expenses are: $%d%%\n", expenses);
+    printf("Your savings are: $%d%%\n", savings);
+    printf("Your total left to spend is: $%.2f\n", total);
+    printf("Your rent is %d%% of your income",(int) prent);
+    printf("Your rent is %d%% of your income",(int) putilities);
+    printf("Your rent is %d%% of your income",(int) ptransportation);
+    return 0;
 }

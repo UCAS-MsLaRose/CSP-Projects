@@ -1,12 +1,15 @@
-num = 2
-numTwo = 8
-
-print(7-24//(numTwo)*4+6)
-print(18//3-7+(num)*5)
-print(6*4//12+72//(numTwo)-9)
-print(17-6//(num)+4*3)
-print(-2*(1*4-(num)//(num))+6+(num)-3)
-print(-1*((3-4*7)//5)-(num)*24//6)
-print((3*5**(num)//15)-(5-(num)**(num)) )
-print((1**4*(num)**(num)+3**3)-(num)**5//4 )
-print((22//(num)-(num)*5)**(num)+(4-6//6)**(num) )
+input("Hello and welcome to your financial calculator! What is your monthly income?: \n")
+input("What is your monthly rent?: \n")
+input("What is your monthly utilities?: \n")
+input("What is your monthly groceries?: \n")
+input("What is your monthly transportation costs?: \n")
+f"Your monthly income is ${"income":.2f}\n"
+f"Your monthly expenses are ${"expenses":.2f}\n"
+f"Your monthly savings is ${"savings":.2f}\n"
+f"Your monthly spending money is ${"spending":.2f}\n"
+f"Your rent is {int("prent")}% of your monthly income\n"
+f"Your utilities are {int("putilities")}% of your monthly income\n"
+f"Your groceries are {int("pgrocieries")}% of your monthly income\n"
+f"Your transportation is {int("ptransportation")}% of your monthly income\n"
+f"Your savings are {int("psavings")}% of your monthly income\n"
+f"Your expenses are {int("pexpenses")}% of your monthly income\n"
